@@ -1,56 +1,54 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Divcode</title>
+    <title>958 Burgers | Hamburguesas y burritos en Granada</title>
+    <meta
+      name="description"
+      content="958 Burgers: hamburguesas y burritos en Granada. Consulta la carta, el horario y cómo llegar. Proyecto web de práctica."
+    />
+    <meta name="theme-color" content="#080202" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
+    <header id="inicio">
       <div class="menu container">
-        <img class="logo-1" src="images/logo.svg" alt="" />
+        <img class="logo-1" src="images/logo.svg" alt="958 Burgers" />
         <input type="checkbox" id="menu" />
-        <label for="menu">
+        <label for="menu" aria-label="Abrir menú">
           <img src="images/menu.png" class="menu-icono" alt="" />
         </label>
 
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Principal">
           <div class="menu-1">
             <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Productos</a></li>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#carta">Carta</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
             </ul>
           </div>
-          <img class="logo-2" src="images/logo.svg" alt="" />
+          <img class="logo-2" src="images/logo.svg" alt="958 Burgers" />
 
           <div class="menu-2">
             <ul>
-              <li><a href="#">Horario</a></li>
+              <li><a href="#horario">Horario</a></li>
             </ul>
             <div class="socials">
-              <a href="#">
-                <div class="social">
-                  <img src="images/s1.svg" alt="" />
-                </div>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <div class="social"><img src="images/s1.svg" alt="" /></div>
               </a>
-
-              <a href="#">
-                <div class="social">
-                  <img src="images/s2.svg" alt="" />
-                </div>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <div class="social"><img src="images/s2.svg" alt="" /></div>
               </a>
-              <a href="#">
-                <div class="social">
-                  <img src="images/s3.svg" alt="" />
-                </div>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+                <div class="social"><img src="images/s3.svg" alt="" /></div>
               </a>
             </div>
           </div>
@@ -63,18 +61,17 @@
             <div class="swiper-slide">
               <div class="slider">
                 <div class="slider-txt">
-                  <h1>Hamburguesa</h1>
+                  <h1>Clásica 958</h1>
                   <p>
-                    Especialidad de la casa, hamburguesa con carne de vacuno al carbón, pan brioche, salsa parrilla, bacon, queso cheddar, tomate y lecguga fresca. Un delite para los hamburgueseros.
+                    Ternera a la parrilla, pan brioche, queso cheddar, tomate y lechuga fresca. La hamburguesa de la casa.
                   </p>
                   <div class="botones">
-                    <a href="#" class="btn-1">Comprar</a>
-                    <a href="#" class="btn-1">Menu</a>
+                    <a href="#carta" class="btn-1">Ver carta</a>
+                    <a href="#horario" class="btn-1">Horario</a>
                   </div>
                 </div>
-
                 <div class="slider-img">
-                  <img src="images/slider_1.png" alt="" />
+                  <img src="images/slider_1.png" alt="Hamburguesa Clásica 958" />
                 </div>
               </div>
             </div>
@@ -82,17 +79,17 @@
             <div class="swiper-slide">
               <div class="slider">
                 <div class="slider-txt">
-                  <h1>Sandwich</h1>
+                  <h1>Alhambra</h1>
                   <p>
-                    Pan de ajonjolí, queso cheddar, jamón, leguga y tomates frescos. Saborea el mejor sabor.
+                    Ternera, queso de cabra y cebolla caramelizada en pan brioche. Dulce, cremosa y con carácter granadino.
                   </p>
                   <div class="botones">
-                    <a href="#" class="btn-1">Comprar</a>
-                    <a href="#" class="btn-1">Menu</a>
+                    <a href="#carta" class="btn-1">Ver carta</a>
+                    <a href="#horario" class="btn-1">Horario</a>
                   </div>
                 </div>
                 <div class="slider-img">
-                  <img src="images/slider_2.png" alt="" />
+                  <img src="images/slider2.png" alt="Hamburguesa Alhambra" />
                 </div>
               </div>
             </div>
@@ -100,17 +97,17 @@
             <div class="swiper-slide">
               <div class="slider">
                 <div class="slider-txt">
-                  <h1>Burrito</h1>
+                  <h1>Burritos</h1>
                   <p>
-                    Combinación de arroz, frijoles, carnita de cerdo, doble queso, aguacate, pico de gallo, maíz, lechuga fresca y salsa blanca envuelto en tortilla. Una explosión de sabores.
+                    Tortilla de trigo rellena de arroz, frijoles, queso, aguacate y pico de gallo. Elige pollo crispy, ternera picante o veggie.
                   </p>
                   <div class="botones">
-                    <a href="#" class="btn-1">Comprar</a>
-                    <a href="#" class="btn-1">Menu</a>
+                    <a href="#carta" class="btn-1">Ver carta</a>
+                    <a href="#horario" class="btn-1">Horario</a>
                   </div>
                 </div>
                 <div class="slider-img">
-                  <img src="images/slider_3.png" alt="" />
+                  <img src="images/slider3.png" alt="Burrito de 958 Burgers" />
                 </div>
               </div>
             </div>
@@ -123,324 +120,253 @@
       </div>
     </header>
 
-    <main class="products">
-      <div class="tabs container">
-        <input
-          type="radio"
-          name="tabs"
-          id="tab1"
-          checked="checked"
-          class="tabInput"
-          value="1"
-        />
-        <label for="tab1">Hamburguesa</label>
-        <div class="tab">
-          <div class="swiper mySwiper-2" id="swiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="images/food1.png" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>Calidad Premium</p>
-                    <span class="price">€8</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="images/food2.png" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>Calidad Premium</p>
-                    <span class="price">€8</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="images/food3.png" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>Calidad Premium</p>
-                    <span class="price">€8</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+    <main>
+      <section class="products carta" id="carta">
+        <div class="container">
+          <h2 class="sr-only">Carta</h2>
+          <div class="filtros" role="group" aria-label="Filtrar carta por categoría">
+            <button type="button" class="filtro activo" data-filtro="todos" aria-pressed="true">Todo</button>
+            <button type="button" class="filtro" data-filtro="burgers" aria-pressed="false">Burgers</button>
+            <button type="button" class="filtro" data-filtro="burritos" aria-pressed="false">Burritos</button>
+            <button type="button" class="filtro" data-filtro="variedades" aria-pressed="false">Variedades</button>
           </div>
+          <div class="carta-grid">
+          <article class="product" data-id="clasica" data-categoria="burgers" data-nombre="Clásica 958" data-precio="8.5">
+            <div class="product-img">
+              <h4>Clásico</h4>
+              <img src="images/food1.png" alt="Hamburguesa Clásica 958" width="150" height="120" loading="lazy" />
+            </div>
+            <div class="product-txt">
+              <h4>Clásica 958</h4>
+              <p>Ternera, cheddar, lechuga y tomate</p>
+              <span class="price">8,50 €</span>
+              <button type="button" class="btn-pedir">Añadir</button>
+            </div>
+          </article>
+          <article class="product" data-id="alhambra" data-categoria="burgers" data-nombre="Alhambra" data-precio="9.5">
+            <div class="product-img">
+              <h4>Nuevo</h4>
+              <img src="images/food12.png" alt="Hamburguesa Alhambra" width="150" height="120" loading="lazy" />
+            </div>
+            <div class="product-txt">
+              <h4>Alhambra</h4>
+              <p>Ternera, queso de cabra y cebolla caramelizada</p>
+              <span class="price">9,50 €</span>
+              <button type="button" class="btn-pedir">Añadir</button>
+            </div>
+          </article>
+          <article class="product" data-id="sacromonte" data-categoria="burgers" data-nombre="Sacromonte" data-precio="10.5">
+            <div class="product-img">
+              <h4>Top ventas</h4>
+              <img src="images/food10.png" alt="Hamburguesa Sacromonte" width="150" height="120" loading="lazy" />
+            </div>
+            <div class="product-txt">
+              <h4>Sacromonte</h4>
+              <p>Doble ternera, bacon y salsa BBQ</p>
+              <span class="price">10,50 €</span>
+              <button type="button" class="btn-pedir">Añadir</button>
+            </div>
+          </article>
+          <article class="product" data-id="pollo" data-categoria="burritos" data-nombre="Pollo Crispy" data-precio="8.0">
+            <div class="product-img">
+              <h4>Top ventas</h4>
+              <img src="images/food4.png" alt="Burrito de pollo crispy" width="150" height="120" loading="lazy" />
+            </div>
+            <div class="product-txt">
+              <h4>Pollo Crispy</h4>
+              <p>Pollo crujiente, arroz, frijoles y queso</p>
+              <span class="price">8,00 €</span>
+              <button type="button" class="btn-pedir">Añadir</button>
+            </div>
+          </article>
+          <article class="product" data-id="ternera" data-categoria="burritos" data-nombre="Ternera Picante" data-precio="8.5">
+            <div class="product-img">
+              <h4>Picante</h4>
+              <img src="images/food5.png" alt="Burrito de ternera picante" width="150" height="120" loading="lazy" />
+            </div>
+            <div class="product-txt">
+              <h4>Ternera Picante</h4>
+              <p>Ternera especiada, arroz, frijoles y pico de gallo</p>
+              <span class="price">8,50 €</span>
+              <button type="button" class="btn-pedir">Añadir</button>
+            </div>
+          </article>
+          <article class="product" data-id="veggie" data-categoria="burritos" data-nombre="Veggie" data-precio="7.5">
+            <div class="product-img">
+              <h4>Veggie</h4>
+              <img src="images/food6.png" alt="Burrito veggie" width="150" height="120" loading="lazy" />
+            </div>
+            <div class="product-txt">
+              <h4>Veggie</h4>
+              <p>Frijoles, aguacate, maíz y arroz</p>
+              <span class="price">7,50 €</span>
+              <button type="button" class="btn-pedir">Añadir</button>
+            </div>
+          </article>
+          <article class="product" data-id="patatas" data-categoria="variedades" data-nombre="Patatas Cheddar" data-precio="4.5">
+            <div class="product-img">
+              <h4>Compartir</h4>
+              <img src="images/patatas_cheddar.png" alt="Patatas con cheddar y bacon" width="150" height="120" loading="lazy" />
+            </div>
+            <div class="product-txt">
+              <h4>Patatas Cheddar</h4>
+              <p>Patatas con cheddar fundido y bacon</p>
+              <span class="price">4,50 €</span>
+              <button type="button" class="btn-pedir">Añadir</button>
+            </div>
+          </article>
+          <article class="product" data-id="nachos" data-categoria="variedades" data-nombre="Nachos" data-precio="5.0">
+            <div class="product-img">
+              <h4>Nuevo</h4>
+              <img src="images/nachos.png" alt="Nachos con guacamole" width="150" height="120" loading="lazy" />
+            </div>
+            <div class="product-txt">
+              <h4>Nachos</h4>
+              <p>Nachos con guacamole</p>
+              <span class="price">5,00 €</span>
+              <button type="button" class="btn-pedir">Añadir</button>
+            </div>
+          </article>
+          <article class="product" data-id="brownie" data-categoria="variedades" data-nombre="Brownie" data-precio="3.5">
+            <div class="product-img">
+              <h4>Postre</h4>
+              <img src="images/brownie.png" alt="Brownie casero" width="150" height="120" loading="lazy" />
+            </div>
+            <div class="product-txt">
+              <h4>Brownie</h4>
+              <p>Brownie casero de chocolate</p>
+              <span class="price">3,50 €</span>
+              <button type="button" class="btn-pedir">Añadir</button>
+            </div>
+          </article>
+          </div>
+          <aside class="pedido" aria-live="polite">
+            <h3>Tu pedido</h3>
+            <p id="pedido-vacio">Añade productos de la carta.</p>
+            <ul id="pedido-lista"></ul>
+            <p class="pedido-total">Total: <span id="pedido-total">0,00 €</span></p>
+            <button type="button" id="pedido-enviar" class="btn-2" disabled>Enviar por WhatsApp</button>
+          </aside>
+        </div>
+      </section>
+
+      <section class="info container" id="nosotros">
+        <div class="info-img">
+          <img src="images/info.png" alt="Fachada de 958 Burgers" width="500" height="250" loading="lazy" />
         </div>
 
-        <input
-          type="radio"
-          name="tabs"
-          id="tab2"
-          checked="checked"
-          class="tabInput"
-          value="2"
-        />
-        <label for="tab2">Burritos</label>
-        <div class="tab">
-          <div class="swiper mySwiper-2" id="swiper2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="images/food4.png" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>Calidad Premium</p>
-                    <span class="price">€8</span>
-                  </div>
-                </div>
-              </div>
+        <div class="info-txt">
+          <h2>Nosotros</h2>
+          <p>
+            958 Burgers nace en Granada con una idea simple: hamburguesas y burritos hechos al momento, con ternera a la parrilla, pan brioche y salsas propias.
+          </p>
+          <a href="#carta" class="btn-2">Ver carta</a>
+        </div>
+      </section>
 
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="images/food5.png" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>Calidad Premium</p>
-                    <span class="price">€8</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="images/food6.png" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>Calidad Premium</p>
-                    <span class="price">€8</span>
-                  </div>
-                </div>
-              </div>
+      <section class="horario" id="horario">
+        <div class="horario-info container">
+          <h2>Horario</h2>
+          <p id="estado" class="estado" role="status"></p>
+          <div class="horario-txt">
+            <div class="txt">
+              <h4>Dirección</h4>
+              <p>Calle Alhamar, 12</p>
+              <p>18001 Granada</p>
             </div>
 
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-        </div>
-
-        <input
-          type="radio"
-          name="tabs"
-          id="tab3"
-          checked="checked"
-          class="tabInput"
-          value="3"
-        />
-        <label for="tab3">Variedades</label>
-        <div class="tab">
-          <div class="swiper mySwiper-2" id="swiper3">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="images/food7.png" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>Calidad Premium</p>
-                    <span class="price">€8</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="images/food8.png" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>Calidad Premium</p>
-                    <span class="price">€8</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product">
-                  <div class="product-img">
-                    <h4>Nuevo</h4>
-                    <img src="images/food9.png" alt="" />
-                  </div>
-                  <div class="product-txt">
-                    <h4>Producto</h4>
-                    <p>Calidad Premium</p>
-                    <span class="price">€8</span>
-                  </div>
-                </div>
-              </div>
+            <div class="txt">
+              <h4>Horario</h4>
+              <p>Lunes a Jueves : 13:00 - 23:00</p>
+              <p>Viernes a Domingo : 13:00 - 00:00</p>
             </div>
 
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="txt">
+              <h4>Contacto</h4>
+              <p><a href="tel:+34958000000">958 000 000</a></p>
+              <p><a href="mailto:info@958burgers.example">info@958burgers.example</a></p>
+            </div>
+
+            <div class="txt">
+              <h4>Redes Sociales</h4>
+              <div class="socials">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <div class="social"><img src="images/s1.svg" alt="" /></div>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <div class="social"><img src="images/s2.svg" alt="" /></div>
+                </a>
+                <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+                  <div class="social"><img src="images/s3.svg" alt="" /></div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section id="mapa">
+        <iframe
+          class="map"
+          title="Mapa de Granada"
+          src="https://www.google.com/maps?q=Granada,Espa%C3%B1a&output=embed"
+          width="100%"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
     </main>
 
-    <section class="info container">
-      <div class="info-img">
-        <img src="images/info.png" alt="" />
-      </div>
-
-      <div class="info-txt">
-        <h2>Información</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
-          minus assumenda rem. Consequuntur impedit, molestiae quisquam pariatur
-          odit neque aliquid, obcaecati consequatur consectetur odio animi
-          eligendi temporibus. Sed, repudiandae natus.
-        </p>
-        <a href="#" class="btn-2">Más información</a>
-      </div>
-    </section>
-
-    <section class="horario">
-      <div class="horario-info container">
-        <h2>Horario</h2>
-        <div class="horario-txt">
-          <div class="txt">
-            <h4>Dirección</h4>
-            <p>Lorem ipsum dolor,</p>
-            <p>Consectetur odio animi eligendi</p>
-          </div>
-
-          <div class="txt">
-            <h4>Horario</h4>
-            <p>Lunes a Viernes : 9 am - 8 pm</p>
-            <p>Sábados y Domingos : 11 am - 7 pm</p>
-          </div>
-
-          <div class="txt">
-            <h4>Teléfono</h4>
-            <p>655-455-555</p>
-            <p>655-455-555</p>
-          </div>
-
-          <div class="txt">
-            <h4>Redes Sociales</h4>
-            <div class="socials">
-              <a href="#">
-                <div class="social">
-                  <img src="images/s1.svg" alt="" />
-                </div>
-              </a>
-
-              <a href="#">
-                <div class="social">
-                  <img src="images/s2.svg" alt="" />
-                </div>
-              </a>
-              <a href="#">
-                <div class="social">
-                  <img src="images/s3.svg" alt="" />
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <iframe
-        class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d794.6308911276275!2d-3.608091930415104!3d37.187791966661734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcef471fd745%3A0x3ed3c6a3a2b64860!2sAv.%20Dr.%20Oloriz%2C%2012-14%2C%20Beiro%2C%2018012%20Granada!5e0!3m2!1ses!2ses!4v1782048894862!5m2!1ses!2ses"
-        width="100%"
-        height="500"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-
     <footer class="footer container">
-      <img class="logo-2" src="images/logo.svg" alt="" />
+      <img class="logo-2" src="images/logo.svg" alt="958 Burgers" />
       <div class="links">
-        <h4>Lorem</h4>
+        <h4>Carta</h4>
         <ul>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
+          <li><a href="#carta">Burgers</a></li>
+          <li><a href="#carta">Burritos</a></li>
+          <li><a href="#carta">Variedades</a></li>
         </ul>
       </div>
 
       <div class="links">
-        <h4>Lorem</h4>
+        <h4>Local</h4>
         <ul>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#horario">Horario</a></li>
+          <li><a href="#mapa">Cómo llegar</a></li>
         </ul>
       </div>
 
       <div class="links">
-        <h4>Lorem</h4>
+        <h4>Contacto</h4>
         <ul>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
+          <li><a href="tel:+34958000000">958 000 000</a></li>
+          <li><a href="mailto:info@958burgers.example">info@958burgers.example</a></li>
         </ul>
       </div>
 
       <div class="links">
-        <h4>Lorem</h4>
+        <h4>Síguenos</h4>
         <div class="socials">
-          <a href="#">
-            <div class="social">
-              <img src="images/s1.svg" alt="" />
-            </div>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <div class="social"><img src="images/s1.svg" alt="" /></div>
           </a>
-
-          <a href="#">
-            <div class="social">
-              <img src="images/s2.svg" alt="" />
-            </div>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <div class="social"><img src="images/s2.svg" alt="" /></div>
           </a>
-          <a href="#">
-            <div class="social">
-              <img src="images/s3.svg" alt="" />
-            </div>
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+            <div class="social"><img src="images/s3.svg" alt="" /></div>
           </a>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <p class="aviso">Proyecto web de práctica. 958 Burgers es un negocio ficticio.</p>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
