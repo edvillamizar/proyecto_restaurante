@@ -75,7 +75,7 @@ const WHATSAPP_NUMERO = "34600000000"; // prefijo de país, sin + ni espacios
 
 **Edwin Alejandro**, desarrollador web front end junior en Granada.  
 
-Portfolio: https://portfolio-edwin-alejandro-villamizar.netlify.app/  
+Portfolio: https://portfolio-edwin-alejandro-villamizar.pages.dev/  
 
 Linkedin: www.linkedin.com/in/edwinvillamizardiaz  
  
