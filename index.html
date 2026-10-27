@@ -11,23 +11,30 @@
     <meta name="theme-color" content="#080202" />
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'" />
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" /></noscript>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      />
+    </noscript>
+    <link rel="stylesheet" href="vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header id="inicio">
       <div class="menu container">
-        <img class="logo-1" src="images/logo.svg" alt="958 Burgers" />
+        <img class="logo-1" src="images/logo.svg" alt="958 Burgers" width="258" height="100" />
         <input type="checkbox" id="menu" />
         <label for="menu" aria-label="Abrir menú">
-          <img src="images/menu.webp" class="menu-icono" alt="" />
+          <img src="images/menu.webp" class="menu-icono" alt="" width="70" height="60" />
         </label>
 
         <nav class="navbar" aria-label="Principal">
@@ -38,7 +45,7 @@
               <li><a href="#nosotros">Nosotros</a></li>
             </ul>
           </div>
-          <img class="logo-2" src="images/logo.svg" alt="958 Burgers" />
+          <img class="logo-2" src="images/logo.svg" alt="958 Burgers" width="258" height="100" />
 
           <div class="menu-2">
             <ul>
@@ -46,13 +53,13 @@
             </ul>
             <div class="socials">
               <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <div class="social"><img src="images/s1.svg" alt="" width="20" height="20"/></div>
+                <div class="social"><img src="images/s1.svg" alt="" width="20" height="20" /></div>
               </a>
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <div class="social"><img src="images/s2.svg" alt="" width="20" height="20"/></div>
+                <div class="social"><img src="images/s2.svg" alt="" width="20" height="20" /></div>
               </a>
               <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
-                <div class="social"><img src="images/s3.svg" alt="" width="20" height="20"/></div>
+                <div class="social"><img src="images/s3.svg" alt="" width="20" height="20" /></div>
               </a>
             </div>
           </div>
@@ -75,7 +82,7 @@
                   </div>
                 </div>
                 <div class="slider-img">
-                  <img src="images/slider_1.webp" alt="Hamburguesa Clásica 958" width="800" height="800" fetchpriority="high"/>
+                  <img src="images/slider_1.webp" alt="Hamburguesa Clásica 958" width="800" height="800" fetchpriority="high" />
                 </div>
               </div>
             </div>
@@ -93,7 +100,7 @@
                   </div>
                 </div>
                 <div class="slider-img">
-                  <img src="images/slider2.webp" alt="Hamburguesa Alhambra" width="788" height="800" loading="lazy"/>
+                  <img data-src="images/slider2.webp" alt="Hamburguesa Alhambra" width="788" height="800" />
                 </div>
               </div>
             </div>
@@ -111,7 +118,7 @@
                   </div>
                 </div>
                 <div class="slider-img">
-                  <img src="images/slider3.webp" alt="Burrito de 958 Burgers" width="800" height="681" loading="lazy" />
+                  <img data-src="images/slider3.webp" alt="Burrito de 958 Burgers" width="800" height="681" />
                 </div>
               </div>
             </div>
@@ -137,11 +144,11 @@
           <div class="carta-grid">
           <article class="product" data-id="clasica" data-categoria="burgers" data-nombre="Clásica 958" data-precio="8.5">
             <div class="product-img">
-              <h4>Clásico</h4>
+              <span class="badge">Clásico</span>
               <img src="images/food1.webp" alt="Hamburguesa Clásica 958" width="150" height="120" loading="lazy" />
             </div>
             <div class="product-txt">
-              <h4>Clásica 958</h4>
+              <h3>Clásica 958</h3>
               <p>Ternera, cheddar, lechuga y tomate</p>
               <span class="price">8,50 €</span>
               <button type="button" class="btn-pedir">Añadir</button>
@@ -149,11 +156,11 @@
           </article>
           <article class="product" data-id="alhambra" data-categoria="burgers" data-nombre="Alhambra" data-precio="9.5">
             <div class="product-img">
-              <h4>Nuevo</h4>
+              <span class="badge">Nuevo</span>
               <img src="images/slider2.webp" alt="Hamburguesa Alhambra" width="150" height="120" loading="lazy" />
             </div>
             <div class="product-txt">
-              <h4>Alhambra</h4>
+              <h3>Alhambra</h3>
               <p>Ternera, queso de cabra y cebolla caramelizada</p>
               <span class="price">9,50 €</span>
               <button type="button" class="btn-pedir">Añadir</button>
@@ -161,11 +168,11 @@
           </article>
           <article class="product" data-id="sacromonte" data-categoria="burgers" data-nombre="Sacromonte" data-precio="10.5">
             <div class="product-img">
-              <h4>Top ventas</h4>
+              <span class="badge">Top ventas</span>
               <img src="images/food10.webp" alt="Hamburguesa Sacromonte" width="150" height="120" loading="lazy" />
             </div>
             <div class="product-txt">
-              <h4>Sacromonte</h4>
+              <h3>Sacromonte</h3>
               <p>Doble ternera, bacon y salsa BBQ</p>
               <span class="price">10,50 €</span>
               <button type="button" class="btn-pedir">Añadir</button>
@@ -173,11 +180,11 @@
           </article>
           <article class="product" data-id="pollo" data-categoria="burritos" data-nombre="Pollo Crispy" data-precio="8.0">
             <div class="product-img">
-              <h4>Top ventas</h4>
+              <span class="badge">Top ventas</span>
               <img src="images/food4.webp" alt="Burrito de pollo crispy" width="150" height="120" loading="lazy" />
             </div>
             <div class="product-txt">
-              <h4>Pollo Crispy</h4>
+              <h3>Pollo Crispy</h3>
               <p>Pollo crujiente, arroz, frijoles y queso</p>
               <span class="price">8,00 €</span>
               <button type="button" class="btn-pedir">Añadir</button>
@@ -185,11 +192,11 @@
           </article>
           <article class="product" data-id="ternera" data-categoria="burritos" data-nombre="Ternera Picante" data-precio="8.5">
             <div class="product-img">
-              <h4>Picante</h4>
+              <span class="badge">Picante</span>
               <img src="images/food5.webp" alt="Burrito de ternera picante" width="150" height="120" loading="lazy" />
             </div>
             <div class="product-txt">
-              <h4>Ternera Picante</h4>
+              <h3>Ternera Picante</h3>
               <p>Ternera especiada, arroz, frijoles y pico de gallo</p>
               <span class="price">8,50 €</span>
               <button type="button" class="btn-pedir">Añadir</button>
@@ -197,11 +204,11 @@
           </article>
           <article class="product" data-id="veggie" data-categoria="burritos" data-nombre="Veggie" data-precio="7.5">
             <div class="product-img">
-              <h4>Veggie</h4>
+              <span class="badge">Veggie</span>
               <img src="images/food6.webp" alt="Burrito veggie" width="150" height="120" loading="lazy" />
             </div>
             <div class="product-txt">
-              <h4>Veggie</h4>
+              <h3>Veggie</h3>
               <p>Frijoles, aguacate, maíz y arroz</p>
               <span class="price">7,50 €</span>
               <button type="button" class="btn-pedir">Añadir</button>
@@ -209,11 +216,11 @@
           </article>
           <article class="product" data-id="patatas" data-categoria="variedades" data-nombre="Patatas Cheddar" data-precio="4.5">
             <div class="product-img">
-              <h4>Compartir</h4>
+              <span class="badge">Compartir</span>
               <img src="images/patatas_cheddar.webp" alt="Patatas con cheddar y bacon" width="150" height="120" loading="lazy" />
             </div>
             <div class="product-txt">
-              <h4>Patatas Cheddar</h4>
+              <h3>Patatas Cheddar</h3>
               <p>Patatas con cheddar fundido y bacon</p>
               <span class="price">4,50 €</span>
               <button type="button" class="btn-pedir">Añadir</button>
@@ -221,11 +228,11 @@
           </article>
           <article class="product" data-id="nachos" data-categoria="variedades" data-nombre="Nachos" data-precio="5.0">
             <div class="product-img">
-              <h4>Nuevo</h4>
+              <span class="badge">Nuevo</span>
               <img src="images/nachos.webp" alt="Nachos con guacamole" width="150" height="120" loading="lazy" />
             </div>
             <div class="product-txt">
-              <h4>Nachos</h4>
+              <h3>Nachos</h3>
               <p>Nachos con guacamole</p>
               <span class="price">5,00 €</span>
               <button type="button" class="btn-pedir">Añadir</button>
@@ -233,11 +240,11 @@
           </article>
           <article class="product" data-id="brownie" data-categoria="variedades" data-nombre="Brownie" data-precio="3.5">
             <div class="product-img">
-              <h4>Postre</h4>
+              <span class="badge">Postre</span>
               <img src="images/brownie.webp" alt="Brownie casero" width="150" height="120" loading="lazy" />
             </div>
             <div class="product-txt">
-              <h4>Brownie</h4>
+              <h3>Brownie</h3>
               <p>Brownie casero de chocolate</p>
               <span class="price">3,50 €</span>
               <button type="button" class="btn-pedir">Añadir</button>
@@ -274,34 +281,34 @@
           <p id="estado" class="estado" role="status"></p>
           <div class="horario-txt">
             <div class="txt">
-              <h4>Dirección</h4>
+              <h3>Dirección</h3>
               <p>Calle Alhamar, 12</p>
               <p>18001 Granada</p>
             </div>
 
             <div class="txt">
-              <h4>Horario</h4>
+              <h3>Horario</h3>
               <p>Lunes a Jueves : 13:00 - 23:00</p>
               <p>Viernes a Domingo : 13:00 - 00:00</p>
             </div>
 
             <div class="txt">
-              <h4>Contacto</h4>
+              <h3>Contacto</h3>
               <p><a href="tel:+34958000000">958 000 000</a></p>
               <p><a href="mailto:info@958burgers.example">info@958burgers.example</a></p>
             </div>
 
             <div class="txt">
-              <h4>Redes Sociales</h4>
+              <h3>Redes Sociales</h3>
               <div class="socials">
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                  <div class="social"><img src="images/s1.svg" alt="" width="20" height="20"/></div>
+                  <div class="social"><img src="images/s1.svg" alt="" width="20" height="20" /></div>
                 </a>
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                  <div class="social"><img src="images/s2.svg" alt="" width="20" height="20"/></div>
+                  <div class="social"><img src="images/s2.svg" alt="" width="20" height="20" /></div>
                 </a>
                 <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
-                  <div class="social"><img src="images/s3.svg" alt="" width="20" height="20"/></div>
+                  <div class="social"><img src="images/s3.svg" alt="" width="20" height="20" /></div>
                 </a>
               </div>
             </div>
@@ -325,9 +332,9 @@
     </main>
 
     <footer class="footer container">
-      <img class="logo-2" src="images/logo.svg" alt="958 Burgers" />
+      <img class="logo-2" src="images/logo.svg" alt="958 Burgers" width="258" height="100" />
       <div class="links">
-        <h4>Carta</h4>
+        <h3>Carta</h3>
         <ul>
           <li><a href="#carta">Burgers</a></li>
           <li><a href="#carta">Burritos</a></li>
@@ -336,7 +343,7 @@
       </div>
 
       <div class="links">
-        <h4>Local</h4>
+        <h3>Local</h3>
         <ul>
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#horario">Horario</a></li>
@@ -345,7 +352,7 @@
       </div>
 
       <div class="links">
-        <h4>Contacto</h4>
+        <h3>Contacto</h3>
         <ul>
           <li><a href="tel:+34958000000">958 000 000</a></li>
           <li><a href="mailto:info@958burgers.example">info@958burgers.example</a></li>
@@ -353,16 +360,16 @@
       </div>
 
       <div class="links">
-        <h4>Síguenos</h4>
+        <h3>Síguenos</h3>
         <div class="socials">
           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <div class="social"><img src="images/s1.svg" alt="" width="20" height="20"/></div>
+            <div class="social"><img src="images/s1.svg" alt="" width="20" height="20" /></div>
           </a>
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <div class="social"><img src="images/s2.svg" alt="" width="20" height="20"/></div>
+            <div class="social"><img src="images/s2.svg" alt="" width="20" height="20" /></div>
           </a>
           <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
-            <div class="social"><img src="images/s3.svg" alt="" width="20" height="20"/></div>
+            <div class="social"><img src="images/s3.svg" alt="" width="20" height="20" /></div>
           </a>
         </div>
       </div>
@@ -370,7 +377,7 @@
 
     <p class="aviso">Proyecto web de práctica. 958 Burgers es un negocio ficticio.</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="vendor/swiper-bundle.min.js" defer></script>
     <script src="script.js" defer></script>
   </body>
 </html>

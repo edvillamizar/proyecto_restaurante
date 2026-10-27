@@ -1,5 +1,5 @@
 // ---------- Slider principal ----------
-// Si la CDN de Swiper falla, el resto del script debe seguir funcionando
+// Si Swiper no carga, el resto del script debe seguir funcionando
 if (typeof Swiper !== "undefined") {
   new Swiper(".mySwiper-1", {
     slidesPerView: 1,
@@ -12,6 +12,13 @@ if (typeof Swiper !== "undefined") {
     },
   });
 }
+
+// Slides 2 y 3 del hero: se cargan al terminar la página para no competir con el LCP
+window.addEventListener("load", () => {
+  document.querySelectorAll(".mySwiper-1 img[data-src]").forEach((img) => {
+    img.src = img.dataset.src;
+  });
+});
 
 // ---------- Carta filtrable ----------
 const filtros = document.querySelectorAll(".filtro");
