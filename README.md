@@ -73,8 +73,11 @@ const WHATSAPP_NUMERO = "34600000000"; // prefijo de país, sin + ni espacios
 
 ## Autor
 
-**Edwin Alejandro**, desarrollador web front end junior en Granada.
-Portfolio: https://portfolio-edwin-alejandro-villamizar.netlify.app/
-Linkedin: www.linkedin.com/in/edwinvillamizardiaz
+**Edwin Alejandro**, desarrollador web front end junior en Granada.  
+
+Portfolio: https://portfolio-edwin-alejandro-villamizar.netlify.app/  
+
+Linkedin: www.linkedin.com/in/edwinvillamizardiaz  
+ 
 
 Diseño base inspirado en como "CREAR una PAGINA WEB DESDE CERO con HTML CSS y JAVASCRIP 🚀" Divcode
