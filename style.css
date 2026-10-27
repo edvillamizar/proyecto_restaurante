@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -25,6 +24,11 @@ html {
 body {
   background-color: #080202;
   font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -121,6 +125,7 @@ button {
 
 .social img {
   margin: 8px 0 0 10px;
+  width: 20px; height: 20px;
 }
 
 .menu .navbar ul li {

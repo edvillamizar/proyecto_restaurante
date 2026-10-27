@@ -4,7 +4,7 @@ if (typeof Swiper !== "undefined") {
   new Swiper(".mySwiper-1", {
     slidesPerView: 1,
     spaceBetween: 30,
-    loop: true,
+    rewind: true,
     pagination: { el: ".swiper-pagination", clickable: true },
     navigation: {
       nextEl: ".swiper-button-next",
